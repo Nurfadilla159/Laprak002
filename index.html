@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAPORAN TEORI</title>
+<style>
+    body {
+      font-family: monospace;
+      margin: 10px;
+      padding: 20px;
+      background-color: #ffff;
+      color: #ff6b6b;
+      transition: all 0.3s;
+    }
+    h1, h2, h3 {
+      color: #ff6b6b;
+    }
+    .sub-content {
+      display: block;
+    }
+    .hidden {
+      display: none;
+    }
+   
+    .mode-rapi body {
+      background-color: #ffd700;
+      color: #821010;
+    }
+  
+    .mode-berantakan {
+      background-color: #800000; 
+      color: #ffd700;
+      font-family: "Comic Sans MS";
+    }
+    .mode-berantakan h1, .mode-berantakan h2, .mode-berantakan h3 {
+      color: #ffd700; 
+    }
+    .mode-berantakan p, .mode-berantakan li {
+      color: #ffd700; 
+    }
+    .mode-berantakan .toggle-button {
+      background-color: #ffd700; 
+      color: #800000; 
+      border: 2px solid #ffd700;
+    }
+    .toggle-button {
+      margin-top: 20px;
+      padding: 10px;
+      cursor: pointer;
+      background-color: #ffbdbd;
+      color: #ff6b6b;
+      border: none;
+      border-radius: 5px;
+    }
+    li {
+      margin-left: 40px;
+      text-align: justify;
+    }
+    ul {
+      margin-left: -25px;
+    }
+    p {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      margin-left: 20px;
+    }
+    .img {
+      margin-right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <h1>LAPORAN TEORI</h1>
+    <h2>Nur fadilla auliza | 202331159</h2>
+  </center>
+
+ 
+  <h3 onclick="toggleContent('content1')">1. Kenapa menggunakan CSS dan JavaScript di Pemrograman Web?</h3>
+  <div id="content1" class="sub-content">
+    <p style="text-align: justify;">Karena CSS digunakan untuk mengubah tampilan dan tata letak elemen-elemen HTML. Dengan menggunakan CSS, kita dapat  memisahkan struktur (HTML) 
+      dari tampilan (CSS) dalam pengembangan web, sehingga kita dapat memberikan tampilan yang konsisten dan menarik bagi pengguna dan membantu menciptakan identitas visual yang
+      kuat untuk sebuah situs web.Sementara JavaScript digunakan untuk membuat halaman web lebih interaktiv dan berfungsi. JavaScript memungkinkan kita untuk membuat efek animasi,
+      validasi formulir, pemrosesan data, dan tindakan saat tombol ditekan, antara lain.
+    </p>
+  </div>
+
+  <h3 onclick="toggleContent('content2')">2. Cara Mengintegrasikan CSS dan JavaScript dalam Pemrograman Web</h3>
+  <div id="content2" class="sub-content">
+    <ul>1. CSS bisa ditambahkan ke dalam HTML dengan beberapa cara:</ul>
+    <ul style="text-align: justify;">
+      <li>Cara Langsung (Inline CSS): Menulis aturan tampilan langsung di dalam elemen HTML. jika ingin membuat tulisan berwarna merah muda, cth: p style="color: 
+        pink;">merah muda. <br></li>
+      <li>Cara Internal (Internal CSS): Ditulis di bagian atas halaman web. Diletakkan dalam tag style di bagian head. Berlaku untuk semua elemen dalam satu halaman.
+        <br></li>
+      <li>Cara Eksternal (External CSS): Ditulis dalam file terpisah dengan akhiran .css, file CSS ini dihubungkan ke HTML menggunakan tag link. Memudahkan kita mengubah 
+        tampilan semua halaman sekaligus.</li>
+    </ul>
+
+    <ul>2. JavaScript juga bisa ditambahkan ke dalam HTML dengan beberapa cara:</ul>
+    <ul style="text-align: justify;">
+    <li>Cara Langsung (Inline CSS): Menulis perintah langsung di elemen HTML. Contoh, tombol yang menampilkan pesan saat diklik: 
+        button onclick="alert('Hayii Icha!')">Klik button <br> </li>
+    <li>Cara Internal (Internal CSS): Ditulis dalam satu tempat di halaman web. Biasanya diletakkan dalam tag script. <br></li>
+    <li>Cara Eksternal (External CSS): Disimpan dalam file tersendiri (berakhiran .js), File ini kemudian dihubungkan ke HTML dengan tag script src="namafile.js".</li>    
+  </ul>
+    <ul>3. CSS bisa ditambahkan ke dalam HTML dengan beberapa cara:</ul>
+    <p style="text-align: justify;">Contoh penggunaan CSS untuk mengubah tampilan elemen yang diatur oleh JavaScript dengan menetapkan kelas elemen dan menggunakan 
+      JavaScript untuk mengubah properti CSSnya. Contoh, JavaScript dapat mengubah kelas elemen saat pengguna mengklik tombol, 
+      dan CSS kemudian akan diterapkan untuk mengubah tampilan elemen sesuai dengan gaya yang telah ditentukan. </p>
+  </div>
+
+  <h3 onclick="toggleContent('content3')">3. Keuntungan Menggunakan CSS dan JavaScript dalam Pemrograman Web</h3>
+  <div id="content3" class="sub-content">
+    <p>Keuntungan menggunakan JavaScript:</p>
+    <ul style="text-align: justify;">
+      <li>Web browser dapat secara otomatis menginterpretasikan script yang telah dibuat melalui HTML dengan JavaScript.</li>
+      <li>Mudah dipahami oleh para web developer, termasuk para pemula.</li>
+      <li>Penanganan kesalahan lebih mudah, sehingga kita dapat memperbaiki kesalahan segera.</li>
+      <li>Multiplatform karena dapat digunakan di semua jenis sistem operasi, seperti Windows, Linux, Android, dan banyak lagi.</li>
+      <li>Mudah dikembangkan karena multiplatform dan dinamis, sehingga dengan mudah diperbaharui dan dikembangkan sesuai kebutuhan dan perkembangan teknologi sekarang.</li>
+      <li>Bahasa pemrograman yang sangat cepat, ringan, dan ramah pengguna karena tidak membutuhkan sumber daya.</li>
+    </ul>
+    <p>Keuntungan menggunakan CSS:</p>
+    <ul style="text-align: justify;">
+      <li>Kecepatan layanan web yang baik, untuk beroperasi dengan efisien, situs web harus memiliki kecepatan loading yang cepat.</li>
+      <li>Perawatannya mudah karena membutuhkan waktu yang lebih sedikit. karena setiap perubahan pada satu baris kode berdampak pada seluruh halaman web.</li>
+      <li>CSS memastikan elemen gaya diterapkan secara konsisten di seluruh halaman.</li>
+      <li>CSS meningkatkan kecepatan dan kemudahan perawatan, menghemat waktu pengembangan.</li>
+      <li>CSS membantu tampilan situs web yang optimal di berbagai perangkat.</li>
+    </ul>
+  </div>
+
+  <h3 onclick="toggleContent('content4')">4. Keuntungan Menggunakan Bootstrap</h3>
+  <div id="content4" class="sub-content">
+    <ul style="text-align: justify;">
+      <li>Menyediakan template dan komponen siap pakai untuk mempercepat pengembangan.</li>
+      <li>Komponen yang didesain secara konsisten untuk tampilan web yang menarik.</li>
+      <li>Mudah dikustomisasi sesuai kebutuhan.</li>
+      <li>Kompatibel dengan berbagai browser, bootstrap memungkinkan akses mudah ke website atau aplikasi web yang dibuat dengan bootstrap.</li>
+      <li>Memudahkan pembuatan tampilan situs yang dapat menyesuaikan perangkat.</li>
+    </ul>
+  </div>
+
+  <h3 onclick="toggleContent('content5')">5. Contoh Penggunaan Bootstrap, Fungsinya, dan Screenshot Hasil Running-nya</h3>
+  <div id="content5" class="sub-content">
+    <p>Contoh:  <img src="assets/ss1.png" width="300px" alt="coding"></p> 
+    <p style="text-align: justify;">Bootstrap di atas dapat digunakan untuk membuat tiga tombol berbeda (biru, kuning, dan hijau) menggunakan kelas.btn, .btn-primary, .btn-warning, dan .btn-sukses. Sementara kelas container membuat tata letak responsif, mt-5 menambah jarak di atas tombol.
+       Dengan menggunakan bootstrap CSS dan JS yang terhubung, tombol dapat dibuat lebih cepat dan terlihat lebih rapi tanpa menulis banyak CSS atau JS tambahan. </p>
+    <img src="assets/ss2.png" width="500px" alt="hasilrun" style="margin-left: 55px;">
+  </div>
+  <button onclick="toggleMode()" class="toggle-button">Ganti Mode Tampilan</button>
+
+  <script>
+    function toggleContent(id) {
+      const content = document.getElementById(id);
+      if (confirm("Apakah Anda ingin menyembunyikan konten bagian ini?")) {
+        content.classList.toggle('hidden');
+      }
+    }
+
+    function toggleMode() {
+      document.body.classList.toggle('mode-berantakan');
+    }
+  </script>
+</body>
+</html>
